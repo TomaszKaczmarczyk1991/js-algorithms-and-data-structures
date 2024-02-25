@@ -16,8 +16,12 @@ function sameFrequency(int1, int2){
     frequencyCounter2[digit] = (frequencyCounter2[digit] || 0) + 1;
   }
 
-  
+  for(let key in frequencyCounter1){
+    if(frequencyCounter1[key] !== frequencyCounter2[key]){
+      return false;
+    } 
+  }
+  return true;
 }
 
-
-console.log(sameFrequency(1238, 1224));
+console.log(sameFrequency(1224, 1224));
