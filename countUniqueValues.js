@@ -1,3 +1,5 @@
+// Coding Exercise 2: Multiple Pointers - countUniqueValues
+
 function countUniqueValues(arr){
     if(arr.length === 0) return 0;
     let counter = 1;
