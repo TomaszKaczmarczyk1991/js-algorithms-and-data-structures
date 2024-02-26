@@ -1,4 +1,4 @@
-// Coding Exercise 3: Frequency Counter - sameFrequency
+// Coding Exercise 3: Frequency Counter - sameFrequency (OPTIONAL!!!)
 
 function sameFrequency(int1, int2){
   const num1 = int1.toString();
