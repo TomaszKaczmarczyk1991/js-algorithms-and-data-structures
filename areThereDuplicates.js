@@ -6,4 +6,4 @@ function areThereDuplicates(...arg) {
   return true;
 }
 
-console.log(areThereDuplicates(1, 2, 'test', {author: "Ray Bradbury", title: "Fahrenheit 451"}));
+console.log(areThereDuplicates(1, 'test', {author: "Ray Bradbury", title: "Fahrenheit 451"}));
