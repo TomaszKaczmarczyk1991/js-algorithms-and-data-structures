@@ -13,9 +13,7 @@ function maxSubarraySum(arr, num){
 
   for(let i = num; i < arr.length; i++){
     temp = temp - arr[i - num] + arr[i];
-    console.log("temp: ", temp);
     max = Math.max(max, temp);
-    console.log("max: ", max);
   }
   return max;
 }
