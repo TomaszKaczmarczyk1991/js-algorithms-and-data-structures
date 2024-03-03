@@ -9,7 +9,15 @@ function maxSubarraySum(arr, num){
     max += arr[i];
   }
   temp = max;
-  console.log(temp)
+  console.log("temp: ", temp);
+
+  for(let i = num; i < arr.length; i++){
+    temp = temp - arr[i - num] + arr[i];
+    console.log("temp: ", temp);
+    max = Math.max(max, temp);
+    console.log("max: ", max);
+  }
+  return max;
 }
 
 console.log(maxSubarraySum([3,-2,7,-4,1,-1,4,-2,1],2)); // 5
