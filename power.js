@@ -9,8 +9,18 @@
 
 function power(base,exp){
     if(exp === 0) return 1;
-
-    power(base, exp-1);
+    return base * power(base, exp-1);
 }
 
-console.log(power(2,3));
+console.log(power(2,4));
+
+// Initial call: power(2, 4)
+// power(2, 4) calls power(2, 3)
+// power(2, 3) calls power(2, 2)
+// power(2, 2) calls power(2, 1)
+// power(2, 1) calls power(2, 0)
+// power(2, 0) returns 1 to the previous call (power(2, 1))
+// power(2, 1) returns 2 to the previous call (power(2, 2))
+// power(2, 2) returns 4 to the previous call (power(2, 3))
+// power(2, 3) returns 8 to the previous call (power(2, 4))
+// power(2, 4) returns 16 to the initial call
