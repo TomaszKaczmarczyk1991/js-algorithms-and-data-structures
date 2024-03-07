@@ -6,12 +6,8 @@
 // recursiveRange(10) // 55 
 
 function recursiveRange(num){
-  let initVal = num;
-  if(num === 0) return initVal;
-    return initVal += recursiveRange(num - 1);
+  if(num === 0) return num;
+    return num += recursiveRange(num - 1);
 }
 
-console.log(recursiveRange(6));
-
-// num === 7
-// 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28
+console.log(recursiveRange(7));
