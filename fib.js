@@ -9,11 +9,7 @@
 // fib(35) // 9227465
 
 function fib(num){
-  if(num <= 1){
-    return num;
-  } else {
-    return fib(num - 1) + fib(num - 2);
-  }
+  return num <= 1 ? num : fib(num - 1) + fib(num - 2);
 }
 
 console.log(fib(5));
