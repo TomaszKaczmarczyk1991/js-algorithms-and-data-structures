@@ -12,3 +12,9 @@ function isPalindrome(str){
 }
 
 console.log(isPalindrome('tacocat'));
+
+// Call stack:
+// 1. isPalindrome('tacocat')
+// 2.   isPalindrome('acoca')
+// 3.     isPalindrome('coc')
+// 4.       isPalindrome('o')
