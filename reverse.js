@@ -1,15 +1,18 @@
 function reverse(str){
   let string = Array.from(str);
-  // console.log(string) // ['a', 'w', 'e', 's', 'o', 'm', 'e']
   let result = [];
+  
+  if(string.length !== 0) {
   let first = string[0];
   let last = string[string.length - 1];
-
-  string.pop(last);
-  result.push(last);
   
-// remember that strings are immutable in js!
-console.log(result)
+  let temp = string.pop();
+  result.push(temp);
+  } else {
+    return result.join("");
+  }
+
+  return result.join("") + reverse(string);
 }
   
 console.log(reverse('awesome')); // 'emosewa'
