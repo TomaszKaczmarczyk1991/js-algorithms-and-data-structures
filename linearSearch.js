@@ -1,5 +1,5 @@
-function linearSearch(arr, index){
-    return arr.indexOf(index);
+function linearSearch(arr, num){
+    return arr.indexOf(num);
   }
 
 
